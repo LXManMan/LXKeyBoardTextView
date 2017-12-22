@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F31B6EB31FECBA5B0073C5EE /* UILabel+LXVerticalStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = F31B6EB21FECBA5B0073C5EE /* UILabel+LXVerticalStyle.m */; };
+		F31B6EB61FECBA8F0073C5EE /* NSObject+LXSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = F31B6EB41FECBA8F0073C5EE /* NSObject+LXSwizzling.m */; };
+		F3A118881FEB4B4F00B91E40 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A118871FEB4B4F00B91E40 /* AppDelegate.m */; };
+		F3A1188B1FEB4B4F00B91E40 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A1188A1FEB4B4F00B91E40 /* ViewController.m */; };
+		F3A1188E1FEB4B4F00B91E40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A1188C1FEB4B4F00B91E40 /* Main.storyboard */; };
+		F3A118901FEB4B4F00B91E40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3A1188F1FEB4B4F00B91E40 /* Assets.xcassets */; };
+		F3A118931FEB4B4F00B91E40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A118911FEB4B4F00B91E40 /* LaunchScreen.storyboard */; };
+		F3A118961FEB4B4F00B91E40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A118951FEB4B4F00B91E40 /* main.m */; };
+		F3A118A01FEB4B5000B91E40 /* LXKeyBoardTextViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A1189F1FEB4B5000B91E40 /* LXKeyBoardTextViewTests.m */; };
+		F3A118AB1FEB4B5000B91E40 /* LXKeyBoardTextViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A118AA1FEB4B5000B91E40 /* LXKeyBoardTextViewUITests.m */; };
+		F3A118C11FEB4B8700B91E40 /* LxButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A118BA1FEB4B8700B91E40 /* LxButton.m */; };
+		F3A118C21FEB4B8700B91E40 /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A118BC1FEB4B8700B91E40 /* UIColor+Expanded.m */; };
+		F3A118C31FEB4B8700B91E40 /* UILabel+LXLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A118BE1FEB4B8700B91E40 /* UILabel+LXLabel.m */; };
+		F3A118C41FEB4B8700B91E40 /* UIView+LX_Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A118C01FEB4B8700B91E40 /* UIView+LX_Frame.m */; };
+		F3A118C81FEB4C6E00B91E40 /* LXKeyboadController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A118C71FEB4C6E00B91E40 /* LXKeyboadController.m */; };
+		F3A118CF1FEB4E8B00B91E40 /* LXKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A118CE1FEB4E8B00B91E40 /* LXKeyBoard.m */; };
+		F3A118D21FEB4F7B00B91E40 /* LXTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A118D11FEB4F7B00B91E40 /* LXTextView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3A1189C1FEB4B4F00B91E40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3A1187B1FEB4B4F00B91E40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3A118821FEB4B4F00B91E40;
+			remoteInfo = LXKeyBoardTextView;
+		};
+		F3A118A71FEB4B5000B91E40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3A1187B1FEB4B4F00B91E40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3A118821FEB4B4F00B91E40;
+			remoteInfo = LXKeyBoardTextView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F31B6EB11FECBA5B0073C5EE /* UILabel+LXVerticalStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+LXVerticalStyle.h"; sourceTree = "<group>"; };
+		F31B6EB21FECBA5B0073C5EE /* UILabel+LXVerticalStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LXVerticalStyle.m"; sourceTree = "<group>"; };
+		F31B6EB41FECBA8F0073C5EE /* NSObject+LXSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LXSwizzling.m"; sourceTree = "<group>"; };
+		F31B6EB51FECBA8F0073C5EE /* NSObject+LXSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LXSwizzling.h"; sourceTree = "<group>"; };
+		F3A118831FEB4B4F00B91E40 /* LXKeyBoardTextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXKeyBoardTextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3A118861FEB4B4F00B91E40 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F3A118871FEB4B4F00B91E40 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F3A118891FEB4B4F00B91E40 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F3A1188A1FEB4B4F00B91E40 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F3A1188D1FEB4B4F00B91E40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3A1188F1FEB4B4F00B91E40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3A118921FEB4B4F00B91E40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3A118941FEB4B4F00B91E40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3A118951FEB4B4F00B91E40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F3A1189B1FEB4B4F00B91E40 /* LXKeyBoardTextViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXKeyBoardTextViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3A1189F1FEB4B5000B91E40 /* LXKeyBoardTextViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXKeyBoardTextViewTests.m; sourceTree = "<group>"; };
+		F3A118A11FEB4B5000B91E40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3A118A61FEB4B5000B91E40 /* LXKeyBoardTextViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXKeyBoardTextViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3A118AA1FEB4B5000B91E40 /* LXKeyBoardTextViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXKeyBoardTextViewUITests.m; sourceTree = "<group>"; };
+		F3A118AC1FEB4B5000B91E40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3A118B91FEB4B8700B91E40 /* LxButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LxButton.h; sourceTree = "<group>"; };
+		F3A118BA1FEB4B8700B91E40 /* LxButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LxButton.m; sourceTree = "<group>"; };
+		F3A118BB1FEB4B8700B91E40 /* UIColor+Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Expanded.h"; sourceTree = "<group>"; };
+		F3A118BC1FEB4B8700B91E40 /* UIColor+Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Expanded.m"; sourceTree = "<group>"; };
+		F3A118BD1FEB4B8700B91E40 /* UILabel+LXLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+LXLabel.h"; sourceTree = "<group>"; };
+		F3A118BE1FEB4B8700B91E40 /* UILabel+LXLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LXLabel.m"; sourceTree = "<group>"; };
+		F3A118BF1FEB4B8700B91E40 /* UIView+LX_Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LX_Frame.h"; sourceTree = "<group>"; };
+		F3A118C01FEB4B8700B91E40 /* UIView+LX_Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LX_Frame.m"; sourceTree = "<group>"; };
+		F3A118C51FEB4B9800B91E40 /* LX.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LX.pch; sourceTree = "<group>"; };
+		F3A118C61FEB4C6E00B91E40 /* LXKeyboadController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXKeyboadController.h; sourceTree = "<group>"; };
+		F3A118C71FEB4C6E00B91E40 /* LXKeyboadController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXKeyboadController.m; sourceTree = "<group>"; };
+		F3A118CD1FEB4E8B00B91E40 /* LXKeyBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXKeyBoard.h; sourceTree = "<group>"; };
+		F3A118CE1FEB4E8B00B91E40 /* LXKeyBoard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXKeyBoard.m; sourceTree = "<group>"; };
+		F3A118D01FEB4F7B00B91E40 /* LXTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXTextView.h; sourceTree = "<group>"; };
+		F3A118D11FEB4F7B00B91E40 /* LXTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXTextView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3A118801FEB4B4F00B91E40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3A118981FEB4B4F00B91E40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3A118A31FEB4B5000B91E40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3A1187A1FEB4B4F00B91E40 = {
+			isa = PBXGroup;
+			children = (
+				F3A118851FEB4B4F00B91E40 /* LXKeyBoardTextView */,
+				F3A1189E1FEB4B5000B91E40 /* LXKeyBoardTextViewTests */,
+				F3A118A91FEB4B5000B91E40 /* LXKeyBoardTextViewUITests */,
+				F3A118841FEB4B4F00B91E40 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3A118841FEB4B4F00B91E40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3A118831FEB4B4F00B91E40 /* LXKeyBoardTextView.app */,
+				F3A1189B1FEB4B4F00B91E40 /* LXKeyBoardTextViewTests.xctest */,
+				F3A118A61FEB4B5000B91E40 /* LXKeyBoardTextViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3A118851FEB4B4F00B91E40 /* LXKeyBoardTextView */ = {
+			isa = PBXGroup;
+			children = (
+				F3A118861FEB4B4F00B91E40 /* AppDelegate.h */,
+				F3A118871FEB4B4F00B91E40 /* AppDelegate.m */,
+				F3A118891FEB4B4F00B91E40 /* ViewController.h */,
+				F3A1188A1FEB4B4F00B91E40 /* ViewController.m */,
+				F3A118C61FEB4C6E00B91E40 /* LXKeyboadController.h */,
+				F3A118C71FEB4C6E00B91E40 /* LXKeyboadController.m */,
+				F3A118C91FEB4E5400B91E40 /* LXKeyboard */,
+				F3A118B81FEB4B8700B91E40 /* Category */,
+				F3A1188C1FEB4B4F00B91E40 /* Main.storyboard */,
+				F3A1188F1FEB4B4F00B91E40 /* Assets.xcassets */,
+				F3A118911FEB4B4F00B91E40 /* LaunchScreen.storyboard */,
+				F3A118941FEB4B4F00B91E40 /* Info.plist */,
+				F3A118951FEB4B4F00B91E40 /* main.m */,
+				F3A118C51FEB4B9800B91E40 /* LX.pch */,
+			);
+			path = LXKeyBoardTextView;
+			sourceTree = "<group>";
+		};
+		F3A1189E1FEB4B5000B91E40 /* LXKeyBoardTextViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3A1189F1FEB4B5000B91E40 /* LXKeyBoardTextViewTests.m */,
+				F3A118A11FEB4B5000B91E40 /* Info.plist */,
+			);
+			path = LXKeyBoardTextViewTests;
+			sourceTree = "<group>";
+		};
+		F3A118A91FEB4B5000B91E40 /* LXKeyBoardTextViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F3A118AA1FEB4B5000B91E40 /* LXKeyBoardTextViewUITests.m */,
+				F3A118AC1FEB4B5000B91E40 /* Info.plist */,
+			);
+			path = LXKeyBoardTextViewUITests;
+			sourceTree = "<group>";
+		};
+		F3A118B81FEB4B8700B91E40 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F31B6EB51FECBA8F0073C5EE /* NSObject+LXSwizzling.h */,
+				F31B6EB41FECBA8F0073C5EE /* NSObject+LXSwizzling.m */,
+				F31B6EB11FECBA5B0073C5EE /* UILabel+LXVerticalStyle.h */,
+				F31B6EB21FECBA5B0073C5EE /* UILabel+LXVerticalStyle.m */,
+				F3A118B91FEB4B8700B91E40 /* LxButton.h */,
+				F3A118BA1FEB4B8700B91E40 /* LxButton.m */,
+				F3A118BB1FEB4B8700B91E40 /* UIColor+Expanded.h */,
+				F3A118BC1FEB4B8700B91E40 /* UIColor+Expanded.m */,
+				F3A118BD1FEB4B8700B91E40 /* UILabel+LXLabel.h */,
+				F3A118BE1FEB4B8700B91E40 /* UILabel+LXLabel.m */,
+				F3A118BF1FEB4B8700B91E40 /* UIView+LX_Frame.h */,
+				F3A118C01FEB4B8700B91E40 /* UIView+LX_Frame.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F3A118C91FEB4E5400B91E40 /* LXKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F3A118CD1FEB4E8B00B91E40 /* LXKeyBoard.h */,
+				F3A118CE1FEB4E8B00B91E40 /* LXKeyBoard.m */,
+				F3A118D01FEB4F7B00B91E40 /* LXTextView.h */,
+				F3A118D11FEB4F7B00B91E40 /* LXTextView.m */,
+			);
+			path = LXKeyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3A118821FEB4B4F00B91E40 /* LXKeyBoardTextView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3A118AF1FEB4B5000B91E40 /* Build configuration list for PBXNativeTarget "LXKeyBoardTextView" */;
+			buildPhases = (
+				F3A1187F1FEB4B4F00B91E40 /* Sources */,
+				F3A118801FEB4B4F00B91E40 /* Frameworks */,
+				F3A118811FEB4B4F00B91E40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LXKeyBoardTextView;
+			productName = LXKeyBoardTextView;
+			productReference = F3A118831FEB4B4F00B91E40 /* LXKeyBoardTextView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3A1189A1FEB4B4F00B91E40 /* LXKeyBoardTextViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3A118B21FEB4B5000B91E40 /* Build configuration list for PBXNativeTarget "LXKeyBoardTextViewTests" */;
+			buildPhases = (
+				F3A118971FEB4B4F00B91E40 /* Sources */,
+				F3A118981FEB4B4F00B91E40 /* Frameworks */,
+				F3A118991FEB4B4F00B91E40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3A1189D1FEB4B4F00B91E40 /* PBXTargetDependency */,
+			);
+			name = LXKeyBoardTextViewTests;
+			productName = LXKeyBoardTextViewTests;
+			productReference = F3A1189B1FEB4B4F00B91E40 /* LXKeyBoardTextViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F3A118A51FEB4B5000B91E40 /* LXKeyBoardTextViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3A118B51FEB4B5000B91E40 /* Build configuration list for PBXNativeTarget "LXKeyBoardTextViewUITests" */;
+			buildPhases = (
+				F3A118A21FEB4B5000B91E40 /* Sources */,
+				F3A118A31FEB4B5000B91E40 /* Frameworks */,
+				F3A118A41FEB4B5000B91E40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3A118A81FEB4B5000B91E40 /* PBXTargetDependency */,
+			);
+			name = LXKeyBoardTextViewUITests;
+			productName = LXKeyBoardTextViewUITests;
+			productReference = F3A118A61FEB4B5000B91E40 /* LXKeyBoardTextViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3A1187B1FEB4B4F00B91E40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "漫漫";
+				TargetAttributes = {
+					F3A118821FEB4B4F00B91E40 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					F3A1189A1FEB4B4F00B91E40 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F3A118821FEB4B4F00B91E40;
+					};
+					F3A118A51FEB4B5000B91E40 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F3A118821FEB4B4F00B91E40;
+					};
+				};
+			};
+			buildConfigurationList = F3A1187E1FEB4B4F00B91E40 /* Build configuration list for PBXProject "LXKeyBoardTextView" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3A1187A1FEB4B4F00B91E40;
+			productRefGroup = F3A118841FEB4B4F00B91E40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3A118821FEB4B4F00B91E40 /* LXKeyBoardTextView */,
+				F3A1189A1FEB4B4F00B91E40 /* LXKeyBoardTextViewTests */,
+				F3A118A51FEB4B5000B91E40 /* LXKeyBoardTextViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3A118811FEB4B4F00B91E40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3A118931FEB4B4F00B91E40 /* LaunchScreen.storyboard in Resources */,
+				F3A118901FEB4B4F00B91E40 /* Assets.xcassets in Resources */,
+				F3A1188E1FEB4B4F00B91E40 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3A118991FEB4B4F00B91E40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3A118A41FEB4B5000B91E40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3A1187F1FEB4B4F00B91E40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3A1188B1FEB4B4F00B91E40 /* ViewController.m in Sources */,
+				F31B6EB61FECBA8F0073C5EE /* NSObject+LXSwizzling.m in Sources */,
+				F3A118CF1FEB4E8B00B91E40 /* LXKeyBoard.m in Sources */,
+				F3A118C31FEB4B8700B91E40 /* UILabel+LXLabel.m in Sources */,
+				F31B6EB31FECBA5B0073C5EE /* UILabel+LXVerticalStyle.m in Sources */,
+				F3A118D21FEB4F7B00B91E40 /* LXTextView.m in Sources */,
+				F3A118C41FEB4B8700B91E40 /* UIView+LX_Frame.m in Sources */,
+				F3A118C11FEB4B8700B91E40 /* LxButton.m in Sources */,
+				F3A118961FEB4B4F00B91E40 /* main.m in Sources */,
+				F3A118881FEB4B4F00B91E40 /* AppDelegate.m in Sources */,
+				F3A118C21FEB4B8700B91E40 /* UIColor+Expanded.m in Sources */,
+				F3A118C81FEB4C6E00B91E40 /* LXKeyboadController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3A118971FEB4B4F00B91E40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3A118A01FEB4B5000B91E40 /* LXKeyBoardTextViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3A118A21FEB4B5000B91E40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3A118AB1FEB4B5000B91E40 /* LXKeyBoardTextViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3A1189D1FEB4B4F00B91E40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3A118821FEB4B4F00B91E40 /* LXKeyBoardTextView */;
+			targetProxy = F3A1189C1FEB4B4F00B91E40 /* PBXContainerItemProxy */;
+		};
+		F3A118A81FEB4B5000B91E40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3A118821FEB4B4F00B91E40 /* LXKeyBoardTextView */;
+			targetProxy = F3A118A71FEB4B5000B91E40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3A1188C1FEB4B4F00B91E40 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3A1188D1FEB4B4F00B91E40 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3A118911FEB4B4F00B91E40 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3A118921FEB4B4F00B91E40 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3A118AD1FEB4B5000B91E40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F3A118AE1FEB4B5000B91E40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3A118B01FEB4B5000B91E40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BL3GGVA2PM;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LXKeyBoardTextView/LX.pch";
+				INFOPLIST_FILE = LXKeyBoardTextView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "--.LXKeyBoardTextView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F3A118B11FEB4B5000B91E40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BL3GGVA2PM;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LXKeyBoardTextView/LX.pch";
+				INFOPLIST_FILE = LXKeyBoardTextView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "--.LXKeyBoardTextView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F3A118B31FEB4B5000B91E40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LXKeyBoardTextViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "--.LXKeyBoardTextViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LXKeyBoardTextView.app/LXKeyBoardTextView";
+			};
+			name = Debug;
+		};
+		F3A118B41FEB4B5000B91E40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LXKeyBoardTextViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "--.LXKeyBoardTextViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LXKeyBoardTextView.app/LXKeyBoardTextView";
+			};
+			name = Release;
+		};
+		F3A118B61FEB4B5000B91E40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LXKeyBoardTextViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "--.LXKeyBoardTextViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LXKeyBoardTextView;
+			};
+			name = Debug;
+		};
+		F3A118B71FEB4B5000B91E40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LXKeyBoardTextViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "--.LXKeyBoardTextViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LXKeyBoardTextView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3A1187E1FEB4B4F00B91E40 /* Build configuration list for PBXProject "LXKeyBoardTextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3A118AD1FEB4B5000B91E40 /* Debug */,
+				F3A118AE1FEB4B5000B91E40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3A118AF1FEB4B5000B91E40 /* Build configuration list for PBXNativeTarget "LXKeyBoardTextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3A118B01FEB4B5000B91E40 /* Debug */,
+				F3A118B11FEB4B5000B91E40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3A118B21FEB4B5000B91E40 /* Build configuration list for PBXNativeTarget "LXKeyBoardTextViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3A118B31FEB4B5000B91E40 /* Debug */,
+				F3A118B41FEB4B5000B91E40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3A118B51FEB4B5000B91E40 /* Build configuration list for PBXNativeTarget "LXKeyBoardTextViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3A118B61FEB4B5000B91E40 /* Debug */,
+				F3A118B71FEB4B5000B91E40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3A1187B1FEB4B4F00B91E40 /* Project object */;
+}
