@@ -8,8 +8,6 @@
 
 #import "LXKeyBoard.h"
 #import "LXTextView.h"
-#define TEXTFONT  Font(16)
-#define BTNW 60
 @interface LXKeyBoard()<UITextViewDelegate>
 @property(nonatomic,strong)LXTextView *textView;
 @property(nonatomic,strong)LxButton *sendBtn;
@@ -21,66 +19,98 @@
     CGFloat keyboardY;
     
 }
--(void)dealloc{
-    [[NSNotificationCenter defaultCenter]removeObserver:self];
-    NSLog(@"%@",self.class);
-}
--(void)setMaxLine:(int)maxLine{
-    _maxLine = maxLine;
+
+-(void)awakeFromNib{
+    [super awakeFromNib];
+    
+     [[NSNotificationCenter defaultCenter]removeObserver:self];
+    self.layer.borderWidth = 1;
+    self.layer.borderColor =[UIColor hexStringToColor:@"A5A5A5"].CGColor;
+    
+    
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(keyboardWillChangeFrame:) name:UIKeyboardWillChangeFrameNotification object:nil];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(keyboardDidChangeFrame:) name:UIKeyboardDidChangeFrameNotification object:nil];;
+    
+    //设置默认属性
+    self.topOrBottomEdge = 8;
+    self.font = Font(18);
+    self.maxLine = 3;
 }
 -(instancetype)initWithFrame:(CGRect)frame{
     self =  [super initWithFrame:frame];
     
-    CGFloat orignTextH  = ceil (TEXTFONT.lineHeight + 16);
-    
-    self.frame =  CGRectMake(0, Device_Height - orignTextH, Device_Width, orignTextH);
-    
-    self.maxLine = 3;//默认最大三行
-    
-    self.btnH = self.lx_height;
     
     if (self) {
         self.layer.borderWidth = 1;
         self.layer.borderColor =[UIColor hexStringToColor:@"A5A5A5"].CGColor;
-        [self setup];
+        
         
         [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(keyboardWillChangeFrame:) name:UIKeyboardWillChangeFrameNotification object:nil];
         [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(keyboardDidChangeFrame:) name:UIKeyboardDidChangeFrameNotification object:nil];
+        //设置默认属性
+        self.topOrBottomEdge = 8;
+        self.font = Font(18);
+        self.maxLine = 3;
+        
     }
     return self;
+}
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter]removeObserver:self];
+    NSLog(@"%@",self.class);
+}
+
+
+-(void)beginUpdateUI{
+    
+    //初始化高度 textView的lineHeight + 2 * 上下间距
+    CGFloat orignTextH  = ceil (self.font.lineHeight) + 2 * self.topOrBottomEdge;
+    
+    
+    self.frame =  CGRectMake(0, Device_Height - orignTextH, Device_Width, orignTextH);
+    
+    
+    self.btnH = self.lx_height;
+    
+    
+    [self setup];
+    
+  
+}
+-(void)setup{
+    [self addSubview:self.textView];
+    [self addSubview:self.sendBtn];
+    [self.sendBtn addSubview:self.line];
+    
+    LXWS(weakSelf);
+    [self.sendBtn addClickBlock:^(UIButton *button) {
+        
+        if (weakSelf.sendBlock) {
+            weakSelf.sendBlock(weakSelf.textView.text);
+        }
+    }];
 }
 -(void)textViewDidChange:(UITextView *)textView{
     
     CGFloat contentSizeH = self.textView.contentSize.height;
     CGFloat lineH = self.textView.font.lineHeight;
     
-    
-    
-    CGFloat contentH = contentSizeH - 16;
-    
-    int line = contentH / lineH;
-    
-    NSLog(@"%f",lineH);
-    
-    
-    if (line >self.maxLine) {
-        
-        CGPoint point = CGPointMake(0, (line -self.maxLine) *lineH +8 );
-        [self.textView setContentOffset:point animated:NO];
-        self.textView.lx_height = ceil(self.maxLine *lineH +8);
-        
-    }else{
+    CGFloat maxHeight = ceil(lineH * self.maxLine + textView.textContainerInset.top + textView.textContainerInset.bottom);
+    if (contentSizeH <= maxHeight) {
         self.textView.lx_height = contentSizeH;
-        [self.textView setContentOffset:CGPointZero animated:YES];
-        
+    }else{
+        self.textView.lx_height = maxHeight;
     }
     
-    CGFloat textH = self.textView.lx_height;
-    self.frame = CGRectMake(0, keyboardY - textH, self.lx_width, textH);
-    self.textView.frame = CGRectMake(0, 0, self.lx_width - 60, textH);
-    self.btnH = self.lx_height;
-    self.sendBtn.frame = CGRectMake(self.lx_width - 60, 0, 60,  self.btnH);
-    self.line.frame = CGRectMake(0, 5, 1,  self.btnH - 10);
+    [textView scrollRangeToVisible:NSMakeRange(textView.selectedRange.location, 1)];
+  
+    
+    CGFloat totalH = ceil(self.textView.lx_height) + 2 * self.topOrBottomEdge;
+    self.frame = CGRectMake(0, keyboardY - totalH, self.lx_width, totalH);
+   
+  
+    self.sendBtn.lx_height = totalH;
+    self.line.lx_height = totalH - 10;
     
 }
 -(void)keyboardWillChangeFrame:(NSNotification *)notification{
@@ -144,27 +174,46 @@
     
   
 }
+#pragma mark---setter---
+-(void)setTopOrBottomEdge:(CGFloat)topOrBottomEdge{
+    _topOrBottomEdge  = topOrBottomEdge;
+    
+    if (!_topOrBottomEdge) {
+        topOrBottomEdge = 10;
+    }
+}
+-(void)setMaxLine:(int)maxLine{
+    _maxLine = maxLine;
+    
+    if (!_maxLine || _maxLine <=0) {
+        _maxLine = 3;
+    }
+    
+}
+-(void)setFont:(UIFont *)font{
+    _font = font;
+    if (!font) {
+        _font = Font(16);
+    }
+    
+    
+}
 -(void)setIsDisappear:(BOOL)isDisappear{
     _isDisappear = isDisappear;
 }
--(void)setup{
-    [self addSubview:self.textView];
-    [self addSubview:self.sendBtn];
-    [self.sendBtn addSubview:self.line];
-    
-    LXWS(weakSelf);
-    [self.sendBtn addClickBlock:^(UIButton *button) {
-        
-        if (weakSelf.sendBlock) {
-            weakSelf.sendBlock(weakSelf.textView.text);
-        }
-    }];
-}
+
+
+#pragma mark---getter---
 -(LXTextView *)textView{
     if (!_textView) {
-        _textView =[[LXTextView alloc]initWithFrame:CGRectMake(0, 0, self.lx_width - 60, self.lx_height)];
-        _textView.font = TEXTFONT;
+        _textView =[[LXTextView alloc]initWithFrame:CGRectMake(0, self.topOrBottomEdge, self.lx_width - 60, ceil(self.font.lineHeight))];
+        _textView.font = self.font;
         _textView.delegate = self;
+        _textView.layoutManager.allowsNonContiguousLayout = NO;
+         _textView.enablesReturnKeyAutomatically = YES;
+        _textView.scrollsToTop = NO;
+        _textView.textContainerInset = UIEdgeInsetsZero; //关闭textview的默认间距属性
+        _textView.textContainer.lineFragmentPadding = 0;
         _textView.placeholder = @"发表评论:";
     }
     return _textView;

@@ -57,7 +57,10 @@
     if (!_keyboard) {
         _keyboard =[[LXKeyBoard alloc]initWithFrame:CGRectZero];
         _keyboard.backgroundColor =[UIColor whiteColor];
-        _keyboard.maxLine = 4;
+        _keyboard.maxLine = 3;
+        _keyboard.font = Font(18);
+        _keyboard.topOrBottomEdge = 10;
+        [_keyboard beginUpdateUI];
         LXWS(weakSelf);
         
         _keyboard.sendBlock = ^(NSString *text) {

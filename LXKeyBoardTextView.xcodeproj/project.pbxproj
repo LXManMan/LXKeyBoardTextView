@@ -24,6 +24,8 @@
 		F3A118C81FEB4C6E00B91E40 /* LXKeyboadController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A118C71FEB4C6E00B91E40 /* LXKeyboadController.m */; };
 		F3A118CF1FEB4E8B00B91E40 /* LXKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A118CE1FEB4E8B00B91E40 /* LXKeyBoard.m */; };
 		F3A118D21FEB4F7B00B91E40 /* LXTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A118D11FEB4F7B00B91E40 /* LXTextView.m */; };
+		F3E9B149200EF04600120BD2 /* LXKeyBoardXibController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E9B147200EF04600120BD2 /* LXKeyBoardXibController.m */; };
+		F3E9B14A200EF04600120BD2 /* LXKeyBoardXibController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3E9B148200EF04600120BD2 /* LXKeyBoardXibController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,9 @@
 		F3A118CE1FEB4E8B00B91E40 /* LXKeyBoard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXKeyBoard.m; sourceTree = "<group>"; };
 		F3A118D01FEB4F7B00B91E40 /* LXTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXTextView.h; sourceTree = "<group>"; };
 		F3A118D11FEB4F7B00B91E40 /* LXTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXTextView.m; sourceTree = "<group>"; };
+		F3E9B146200EF04600120BD2 /* LXKeyBoardXibController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXKeyBoardXibController.h; sourceTree = "<group>"; };
+		F3E9B147200EF04600120BD2 /* LXKeyBoardXibController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXKeyBoardXibController.m; sourceTree = "<group>"; };
+		F3E9B148200EF04600120BD2 /* LXKeyBoardXibController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LXKeyBoardXibController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +140,9 @@
 				F3A1188A1FEB4B4F00B91E40 /* ViewController.m */,
 				F3A118C61FEB4C6E00B91E40 /* LXKeyboadController.h */,
 				F3A118C71FEB4C6E00B91E40 /* LXKeyboadController.m */,
+				F3E9B146200EF04600120BD2 /* LXKeyBoardXibController.h */,
+				F3E9B147200EF04600120BD2 /* LXKeyBoardXibController.m */,
+				F3E9B148200EF04600120BD2 /* LXKeyBoardXibController.xib */,
 				F3A118C91FEB4E5400B91E40 /* LXKeyboard */,
 				F3A118B81FEB4B8700B91E40 /* Category */,
 				F3A1188C1FEB4B4F00B91E40 /* Main.storyboard */,
@@ -301,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3E9B14A200EF04600120BD2 /* LXKeyBoardXibController.xib in Resources */,
 				F3A118931FEB4B4F00B91E40 /* LaunchScreen.storyboard in Resources */,
 				F3A118901FEB4B4F00B91E40 /* Assets.xcassets in Resources */,
 				F3A1188E1FEB4B4F00B91E40 /* Main.storyboard in Resources */,
@@ -333,6 +342,7 @@
 				F3A118CF1FEB4E8B00B91E40 /* LXKeyBoard.m in Sources */,
 				F3A118C31FEB4B8700B91E40 /* UILabel+LXLabel.m in Sources */,
 				F31B6EB31FECBA5B0073C5EE /* UILabel+LXVerticalStyle.m in Sources */,
+				F3E9B149200EF04600120BD2 /* LXKeyBoardXibController.m in Sources */,
 				F3A118D21FEB4F7B00B91E40 /* LXTextView.m in Sources */,
 				F3A118C41FEB4B8700B91E40 /* UIView+LX_Frame.m in Sources */,
 				F3A118C11FEB4B8700B91E40 /* LxButton.m in Sources */,

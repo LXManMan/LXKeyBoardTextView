@@ -93,9 +93,9 @@
     attrs[NSForegroundColorAttributeName] = self.placeholderColor?self.placeholderColor:[UIColor grayColor];
     // 画文字
     //    [self.placeholder drawAtPoint:CGPointMake(5, 8) withAttributes:attrs];
-    CGFloat x = 5;
+    CGFloat x = 0;
     CGFloat w = rect.size.width - 2 * x;
-    CGFloat y = 8;
+    CGFloat y = 0;
     CGFloat h = rect.size.height - 2 * y;
     CGRect placeholderRect = CGRectMake(x, y, w, h);
     [self.placeholder drawInRect:placeholderRect withAttributes:attrs];
